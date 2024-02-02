@@ -1,0 +1,6 @@
+N = int(input('Digite um número:'))
+print('Analisando o número {}...'.format(N))
+print('Unidade: {}'.format(N // 1 % 10))
+print('Dezena: {}'.format(N // 10 % 10))
+print('Centena: {}'.format(N // 100 % 10))
+print('Milhar: {}'.format(N // 1000 % 10))

@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Botoes{
+    width: fit-content;
+}
+
+.Botoes img{
+    width: 50px;
+}
+
+.Botoes button{
+    border-radius: 40%;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.Botoes button:hover{
+    transform: scale(1.1); 
+    /*Quando o mouse passar 
+    em cima do botão ele 
+    aumenta um pouco de tamano*/
+}
+
+.Dark{
+    background: linear-gradient(darkblue, black);
+}
+
+.Light{
+    background: linear-gradient(cyan, orange);
+}

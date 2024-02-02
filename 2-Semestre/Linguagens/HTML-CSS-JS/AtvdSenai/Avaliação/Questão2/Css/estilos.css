@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    background: rgb(98, 201, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;   
+}
+
+span{
+    font-weight: bold;
+}
+
+p, label{
+    font-size: 20px;
+}
+
+
+
+#botao{
+    display: flex;
+    justify-content: center;
+}
+
+#botao button{
+    padding: 10px 30px;
+    background-color: rgb(42, 126, 165);
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botao button:hover{
+    background-color: rgb(138, 14, 14);
+    opacity: 0.7;
+}

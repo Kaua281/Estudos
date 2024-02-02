@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.Amarelo{
+    background: rgb(247, 205, 19);
+    width: 700px;
+    height: 2000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Amarelo .Bahia{
+    position: absolute;
+    left: 330px;
+    animation: Descida 5s infinite;
+}
+
+@keyframes Descida{
+    0%{
+        top: 1000px;
+    }
+    50%{
+        top: 1000px;
+    }    
+    100%{
+        top: 1500px;
+    }
+}
+
+.Amarelo .Vitoria{
+    position: absolute;
+    left: 30px;
+    animation: Subida 5s infinite;
+}
+
+@keyframes Subida {
+    0%{
+        top: 1000px;
+    }
+    50%{
+        top: 1000px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+/*.Amarelo .Foguete{
+    position: absolute;
+    width: 200px;
+    top: 165px;
+    animation: Movimento 2s alternate infinite;
+}
+
+@keyframes Movimento {
+    0%{
+        left: 100px;
+        top: 900px;
+    }
+    100%{
+        left: 100px;
+        top:0px;
+    }
+}*/
+
+/*.Amarelo .Vermelho{
+    background: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: Subida 5s infinite;
+}
+
+@keyframes Subida{
+    0%{
+        top: 200px;
+        left: 0;
+    }
+    5%{
+        top: 0px;
+        left: 0px;
+    }
+    10%{
+        top: 0px;
+        left: 200px;
+    }
+    15%{
+
+    }
+
+}*/

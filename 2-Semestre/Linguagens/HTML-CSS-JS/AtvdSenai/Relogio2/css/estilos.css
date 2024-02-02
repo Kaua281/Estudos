@@ -1,0 +1,184 @@
+/* Normalização */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: linear-gradient(150deg, rgb(15, 154, 247), rgb(255, 219, 16)) ;
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite alternate;
+
+}
+
+@keyframes gradient{
+    0%{
+    background-position: 0% 100%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#relogio{
+    width: 550px;
+    height: 200px;
+    background: transparent;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#relogio div{
+    background: black;
+    color: white;
+    height: 180px;
+    width: 125px;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#relogio .pontos{
+    font-size: 50;
+}
+
+#relogio p {
+    font-size: 40px;
+}
+
+#relogio div span{
+    font-size: 20px;
+}
+
+#relogio .tempo{
+    font-size: 20px;
+}
+
+#data-atual,#saudacao{
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.083);
+    border-radius: 8px;
+    padding: 6px 30px;
+    box-shadow: 0 0 10px rgb(51, 51, 51);
+}
+
+#data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    width: auto;
+}
+
+
+.dia{
+    background: linear-gradient(cyan,darkorange);
+}
+.tarde{
+    background: linear-gradient(darkorange,darkred);
+}
+.noite{
+    background: linear-gradient(darkblue,black);
+}
+
+
+
+/*body{
+    background: linear-gradient(150deg, darkcyan, darkred) ;
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite alternate;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes gradient{
+    0%{
+    background-position: 0% 100%;
+    }
+    50%{
+        background-position: 50% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#relogio{
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#relogio div{
+    color: rgb(253, 253, 253);
+    border-radius: 10px;
+    width: 190px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#relogio span{
+    font-size: 40px;
+    letter-spacing: 4;
+}
+
+#data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    width: auto;
+}
+
+#data-atual, .frase{
+    font-size: 40px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 6px 40px;
+
+
+}
+
+#relogio .pontos{
+    font-size: 45px;
+}
+*/
+

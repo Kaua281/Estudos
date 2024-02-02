@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    background: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central{
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.central p{
+    font-size: 20px;
+    color: darkred;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.central input{
+    padding: 5px 40px;
+    border-radius: 15px;
+    background-color: lightgrey;
+    border: none;
+}
+
+.central button{
+    padding: 10px 40px;
+    background-color: brown;
+    color: white;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    margin-top: 20px ;
+    cursor: pointer;
+}

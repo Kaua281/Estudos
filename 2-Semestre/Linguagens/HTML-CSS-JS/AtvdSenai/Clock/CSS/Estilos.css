@@ -1,0 +1,14 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.claro{
+    background: linear-gradient(rgb(255, 153, 0), rgb(0, 183, 255));
+}
+
+.escuro{
+    background: linear-gradient(rgb(28, 28, 194), rgb(3, 6, 12));
+}

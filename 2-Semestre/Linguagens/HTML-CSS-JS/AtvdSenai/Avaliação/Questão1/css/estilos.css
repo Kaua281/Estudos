@@ -1,0 +1,53 @@
+
+
+body{
+  background: linear-gradient(cyan,blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+
+.central img{
+    width: 250px;
+    border:black solid;
+    margin: 20px;
+}
+
+
+.central{
+    background: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px;
+
+}
+
+#botoes button{
+ border: none;
+ outline: none;
+ border-radius: 20px;
+ width: 100px;
+ height: 30px;
+ background: black;
+ color: white;
+ cursor: pointer;
+ transition: 1s;
+ margin: 10px;
+}
+
+
+#botoes button:hover{
+ background: red;
+ color: white;
+
+}
+
+#centralzinho{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

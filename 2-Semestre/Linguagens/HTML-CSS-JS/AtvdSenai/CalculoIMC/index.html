@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <form id="imcCalculator">
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" required>
+        <br><br>
+
+        <label for="height">Altura (m):</label>
+        <input type="number" id="height" step="0.01" required>
+        <br><br>
+
+        <input type="button" value="Calcular IMC" onclick="calculateIMC()">
+    </form>
+
+    <h2>Resultado:</h2>
+    <p>Seu IMC: <span id="imcResult"></span></p>
+    <p>Classificação: <span id="imcClassification"></span></p>
+
+    <script>
+        function calculateIMC() {
+            const weight = parseFloat(document.getElementById("weight").value);
+            const height = parseFloat(document.getElementById("height").value);
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                window.alert("Por favor, preencha os campos corretamente.");
+                return;
+            }
+
+            const imc = weight / (height * height);
+            const classification = getIMCClassification(imc);
+
+            document.getElementById("imcResult").textContent = imc.toFixed(2);
+            document.getElementById("imcClassification").textContent = classification;
+        }
+
+        function getIMCClassification(imc) {
+            if (imc < 18.5) {
+                return "Abaixo do peso";
+            } else if (imc < 24.9) {
+                return "Peso saudável";
+            } else if (imc < 29.9) {
+                return "Sobrepeso";
+            } else if (imc < 34.9) {
+                return "Obesidade grau I";
+            } else if (imc < 39.9) {
+                return "Obesidade grau II";
+            } else {
+                return "Obesidade grau III";
+            }
+        }
+    </script>
+</body>
+</html>

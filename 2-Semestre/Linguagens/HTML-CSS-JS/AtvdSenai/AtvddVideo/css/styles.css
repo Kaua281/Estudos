@@ -1,0 +1,34 @@
+body{
+    background: url('/HTML-CSS-JS/AtvdSenai/AtvddVideo/images/MarioWallpaper.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Central{
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Central video{
+    width: 750px;
+}
+
+.Central button{
+    background-color: darkcyan;
+    padding: 7px 15px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 9px;;
+}
+
+.Central button :active{
+    background: white;
+    color: red;
+}
