@@ -8,14 +8,14 @@ public class Exercicio02 {
        
         Scanner scanner = new Scanner(System.in);
         
-        String x;
-        x = scanner.next();
+        System.out.print("Digite algo: ");
+        String x = scanner.next();
         
-        Integer y;
-        y = scanner.nextInt();
-        
-        double z;
-        z = scanner.nextDouble();
+        System.out.print("Digite um número y: ");
+        int y = scanner.nextInt();
+
+        System.out.print("Digite um número z: ");
+        double z = scanner.nextDouble();
         scanner.close();
 
         System.out.println("Dados digitados: ");
@@ -23,8 +23,8 @@ public class Exercicio02 {
         Locale.setDefault(Locale.US);
         
         System.out.println(x);
-        System.out.printf("%4f%n",y);
-        System.out.printf("%4f%n",z);
+        System.out.printf("%d%n",y);
+        System.out.printf("%.2f%n",z);
                 
     }
 }
