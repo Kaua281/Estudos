@@ -1,6 +1,3 @@
-,
-'                                                                                                                                                                                                                                                               /* Escreva um programa em Java que leia um arquivo de texto chamado "texto.txt" e conte o número de palavras presentes no arquivo. Considere que as palavras são separadas por espaços em branco. Após contar as palavras, o programa deve imprimir o resultado na tela.
- */
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;

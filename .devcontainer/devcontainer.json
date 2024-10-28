@@ -1,0 +1,187 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
+{
+	"name": "Default Linux Universal",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "os-provided"
+		}
+	},
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"steoates.autoimport",
+				"formulahendry.auto-rename-tag",
+				"aaron-bond.better-comments",
+				"bracketpaircolordlw.bracket-pair-color-dlw",
+				"formulahendry.code-runner",
+				"softwaredotcom.swdc-vscode",
+				"kamikillerto.vscode-colorize",
+				"pranaygp.vscode-css-peek",
+				"vscjava.vscode-java-debug",
+				"hudadamar21.elegant-red",
+				"usernamehw.errorlens",
+				"dbaeumer.vscode-eslint",
+				"vscjava.vscode-java-pack",
+				"donjayamanne.githistory",
+				"github.vscode-pull-request-github",
+				"vscjava.vscode-gradle",
+				"vincaslt.highlight-matching-tag",
+				"ecmel.vscode-html-css",
+				"kisstkondoros.vscode-gutter-preview",
+				"visualstudioexptteam.vscodeintellicode",
+				"visualstudioexptteam.intellicode-api-usage-examples",
+				"zignd.html-css-class-completion",
+				"georgewfraser.vscode-javac",
+				"caolin.java-run",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.vscode-jupyter-cell-tags",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-slideshow",
+				"redhat.java",
+				"ritwickdey.liveserver",
+				"yzhang.markdown-all-in-one",
+				"shd101wyy.markdown-preview-enhanced",
+				"vscjava.vscode-maven",
+				"esbenp.prettier-vscode",
+				"vscjava.vscode-java-dependency",
+				"ms-python.vscode-pylance",
+				"ms-python.python",
+				"ms-python.debugpy",
+				"redhat.fabric8-analytics",
+				"vmware.vscode-boot-dev-pack",
+				"miguelsolorio.symbols",
+				"bradlc.vscode-tailwindcss",
+				"vscjava.vscode-java-test",
+				"tomoki1207.pdf",
+				"redhat.vscode-xml"
+			],
+			"settings": {
+  			"symbols.hidesExplorerArrows": false,
+				"window.commandCenter": false,
+				"workbench.layoutControl.enabled": false,
+				"workbench.list.smoothScrolling": true,
+				"workbench.iconTheme": "symbols",
+				"json.schemaDownload.enable": true,
+				"update.mode": "manual",
+				"update.showReleaseNotes": false,
+				"window.restoreWindows": "all",
+				"files.associations": {
+					".env.*": "dotenv"
+				},
+				"editor.fontSize": 12,
+				"editor.lineHeight": 1.8,
+				"editor.rulers": [120],
+				"editor.tabSize": 2,
+				"editor.suggestSelection": "first",
+				"editor.cursorSmoothCaretAnimation": "on",
+				"editor.smoothScrolling": true,
+				"editor.parameterHints.enabled": true,
+				"editor.fontFamily": "JetBrainsMono",
+				"window.zoomLevel": 0.7,
+				"editor.fontLigatures": true,
+				"editor.acceptSuggestionOnCommitCharacter": true,
+				"editor.accessibilitySupport": "off",
+				"editor.semanticHighlighting.enabled": true,
+				"editor.inlineSuggest.enabled": true,
+				"editor.hideCursorInOverviewRuler": false,
+				"editor.scrollbar.vertical": "auto",
+				"editor.renderLineHighlight": "all",
+				"editor.quickSuggestions": {
+					"strings": "on"
+				},
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "explicit",
+					"source.organizeImports": "explicit",
+					"source.fixAll": "explicit"
+				},
+				"vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+				"editor.formatOnPaste": true,
+				"editor.formatOnType": true,
+				"editor.minimap.autohide": true,
+				"editor.minimap.scale": 2,
+				"editor.minimap.size": "fit",
+				"diffEditor.renderGutterMenu": false,
+				"scm.diffDecorations": "overview",
+
+				// Explorer
+				"explorer.compactFolders": false,
+				"explorer.sortOrder": "foldersNestsFiles",
+				"explorer.fileNesting.enabled": true,
+				"explorer.fileNesting.patterns": {
+					"package.json": ".eslint*, .prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, .yarn*, yarn.lock, package-lock*",
+					"tailwind.config.js": "tailwind.config*, postcss.config*",
+					"next.config.js": "next*",
+					".env.local": ".env*",
+					".env": ".env*"
+				},
+				// Terminal
+				"terminal.integrated.fontSize": 14,
+				"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+				"terminal.external.windowsExec": "wt",
+				"terminal.integrated.defaultProfile.windows": "Git Bash",
+				// Security
+				"security.workspace.trust.banner": "never",
+				"security.workspace.trust.startupPrompt": "never",
+				"security.workspace.trust.untrustedFiles": "open",
+				"security.workspace.trust.enabled": false,
+				"autoimport.showNotifications": false,
+				"prettier.trailingComma": "all",
+				"github.copilot.enable": {
+					"*": true,
+					"plaintext": false,
+					"markdown": true,
+					"scminput": false
+				},
+				"git.suggestSmartCommit": false,
+				"breadcrumbs.enabled": false,
+				"explorer.copyRelativePathSeparator": "/",
+				// Language specific settings
+				"javascript.suggest.autoImports": true,
+				"javascript.updateImportsOnFileMove.enabled": "always",
+				"typescript.suggest.autoImports": true,
+				"typescript.updateImportsOnFileMove.enabled": "always",
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.minimap.enabled": false,
+
+				"workbench.colorCustomizations": {
+					"[Elegant Red]": {
+						"statusBar.background": "#070000",
+						"statusBar.foreground": "#ffffff",
+						"titleBar.activeBackground": "#070000",
+						"titleBar.activeForeground": "#e0cccc",
+						"menubar.selectionBackground": "#871212",
+						"list.focusBackground": "#871212",
+						"list.activeSelectionBackground": "#871212",
+						"list.inactiveFocusBackground": "#37131393",
+						"sideBar.background": "#0f0f0f",
+						"scrollbarSlider.activeBackground": "#871212",
+						"activityBarTop.background": "#000000",
+						"activityBarTop.activeBackground": "#871212",
+						"activityBarTop.foreground": "#ffffff"
+					}
+				},
+				"explorer.decorations.badges": false,
+				"eslint.codeActionsOnSave.rules": null,
+				"diffEditor.ignoreTrimWhitespace": true,
+				"window.density.editorTabHeight": "compact",
+				"workbench.activityBar.location": "top"
+			}
+		}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
