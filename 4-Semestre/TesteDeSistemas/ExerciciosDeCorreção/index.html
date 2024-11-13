@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Login - Cadastro e Recuperação</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="loginPage">
+      <h1>Bem-vindo</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Senha" required />
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+
+      <div class="links">
+        <a href="javascript:void(0)" onclick="showPage('forgotPasswordPage')"
+          >Esqueci minha senha</a
+        >
+        <a href="javascript:void(0)" onclick="showPage('registerPage')"
+          >Criar nova conta</a
+        >
+      </div>
+    </div>
+
+    <!-- Esqueceu senha -->
+    <div class="container" id="forgotPasswordPage" style="display: none">
+      <h1>Recuperar Senha</h1>
+      <p class="subtitle">
+        Informe seu email para receber as instruções de recuperação
+      </p>
+
+      <form id="forgotPasswordForm">
+        <div class="form-group">
+          <input
+            type="email"
+            id="recoveryEmail"
+            placeholder="Digite seu email"
+            required
+          />
+          <div class="error-message" id="recoveryEmailError">
+            Email inválido
+          </div>
+        </div>
+
+        <button type="submit">Enviar instruções</button>
+        <div class="success-message" id="recoverySuccess">
+          Email de recuperação enviado com sucesso!
+        </div>
+      </form>
+
+      <div class="links">
+        <a href="javascript:void(0)" onclick="showPage('loginPage')"
+          >Voltar ao login</a
+        >
+      </div>
+    </div>
+
+    <!-- Criar conta-->
+    <div class="container" id="registerPage" style="display: none">
+      <h1>Cadastre-se</h1>
+      <p class="subtitle">Preencha os dados para criar sua conta</p>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Nome completo"
+            required
+          />
+          <div class="error-message" id="nameError">
+            Nome deve ter ao menos 3 caracteres
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email" required />
+          <div class="error-message" id="emailError">Email inválido</div>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Senha" required />
+          <div class="password-requirements">
+            <ul>
+              <li id="lengthCheck">Mínimo de 8 caracteres</li>
+              <li id="upperCheck">Uma letra maiúscula</li>
+              <li id="numberCheck">Um número</li>
+              <li id="specialCheck">Um caractere especial</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirme a senha"
+            required
+          />
+          <div class="error-message" id="passwordError">
+            As senhas não coincidem
+          </div>
+        </div>
+
+        <button type="submit">Criar conta</button>
+        <div class="success-message" id="registerSuccess" style="display: none">
+          Conta criada com sucesso!
+        </div>
+      </form>
+
+      <div class="links">
+        <a href="javascript:void(0)" onclick="showPage('loginPage')"
+          >Já tem uma conta? Faça login</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
