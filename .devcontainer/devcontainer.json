@@ -123,7 +123,6 @@
 				},
 				// Terminal
 				"terminal.integrated.fontSize": 14,
-				"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 				"terminal.external.windowsExec": "wt",
 				"terminal.integrated.defaultProfile.windows": "Git Bash",
 				// Security
@@ -148,25 +147,8 @@
 				"typescript.suggest.autoImports": true,
 				"typescript.updateImportsOnFileMove.enabled": "always",
 				"editor.defaultFormatter": "esbenp.prettier-vscode",
-				"editor.minimap.enabled": false,
 
-				"workbench.colorCustomizations": {
-					"[Elegant Red]": {
-						"statusBar.background": "#070000",
-						"statusBar.foreground": "#ffffff",
-						"titleBar.activeBackground": "#070000",
-						"titleBar.activeForeground": "#e0cccc",
-						"menubar.selectionBackground": "#871212",
-						"list.focusBackground": "#871212",
-						"list.activeSelectionBackground": "#871212",
-						"list.inactiveFocusBackground": "#37131393",
-						"sideBar.background": "#0f0f0f",
-						"scrollbarSlider.activeBackground": "#871212",
-						"activityBarTop.background": "#000000",
-						"activityBarTop.activeBackground": "#871212",
-						"activityBarTop.foreground": "#ffffff"
-					}
-				},
+				"editor.minimap.enabled": false,
 				"explorer.decorations.badges": false,
 				"eslint.codeActionsOnSave.rules": null,
 				"diffEditor.ignoreTrimWhitespace": true,
